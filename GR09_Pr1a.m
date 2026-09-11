@@ -1,3 +1,5 @@
+system('git init')
+repo = gitrepo
 %%Cree un vector fila, de nombre u, con componentes 1, 3, 5, y otro vector 
 %fila v, con componentes 2, 4, 6. Calcule el producto escalar de ambos 
 % vectores de dos formas, usando y sin usar el mandato dot.
