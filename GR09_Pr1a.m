@@ -1,3 +1,4 @@
+system('git init')
 repo=gitrepo
 
 %%1. Cree un vector fila, de nombre u, con componentes 1, 3, 5, y otro vector 
@@ -89,7 +90,7 @@ dimensiones_E=size(E)
 U=linspace(0,1,11)
 V=[0:0.1:1]
 
-
+%%9.
 
 
 
