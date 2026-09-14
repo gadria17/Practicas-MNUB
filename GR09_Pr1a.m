@@ -90,7 +90,47 @@ dimensiones_E=size(E)
 U=linspace(0,1,11)
 V=[0:0.1:1]
 
-%%9.
+%%9.Cree un vector, de nombre Ang, con componentes 0, pi, pi/2, y una 
+% matriz 2x3, de nombre MAng, cuya primera fila contenga los senos de los 
+% elementos de Ang y su segunda fila los cosenos de los elementos de Ang.
+
+Ang= [0,pi,pi/2]
+MAng=[sin(Ang(:,1)),sin(Ang(:,2)),sin(Ang(:,3));
+      cos(Ang(:,1)),cos(Ang(:,2)),cos(Ang(:,3)),]
+
+%%10. Cree una matriz compleja 3x3, de nombre H, con componentes 1+i, 1-i,
+% i (1ª fila), 1-i, i, 1+i (2ª fila) e i, 1+i, 1-i (3ª fila). Calcule su 
+% matriz traspuesta (llámele HT) y su matriz adjunta, es decir, la 
+% traspuesta de la conjugada (llámele HA), y compare ambas. Usando el 
+% mandato conj, calcule también la matriz conjugada (elemento a elemento) 
+% de la matriz H, y llámele HC. Note además que podría haber calculado la 
+% traspuesta usando el mandato transpose.
+
+H=[1+i,1-i,i;
+   1-i,i,1+i;
+   i,1+i,1-i]
+
+HT=H.'
+
+HA=H'
+
+HC=conj(H)
+
+HT2=transpose(H)
+
+%%11. Cree un vector columna, de nombre b, con componentes 0, 1, 2, y 
+% resuelva, usando el operador barra invertida de Matlab, el sistema lineal
+% Ax=b. Fíjese en que, al resolver el sistema, aparece un mensaje de aviso.
+% Calcule, usando el mandato det, el valor del determinante de A, para 
+% comprobar que, efectivamente, la matriz A es una matriz casi singular.
+
+b=[0;1;2];
+x=A\b
+det_A=det(A)
+
+
+
+
 
 
 
