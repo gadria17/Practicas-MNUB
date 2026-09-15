@@ -1,6 +1,3 @@
-system('git init')
-repo=gitrepo
-
 %%1. Cree un vector fila, de nombre u, con componentes 1, 3, 5, y otro vector 
 %fila v, con componentes 2, 4, 6. Calcule el producto escalar de ambos 
 % vectores de dos formas, usando y sin usar el mandato dot.
@@ -10,7 +7,7 @@ v= [2,4,6];
 sin_dot = u*v'
 
 %Con el mandato dot
-con_dot= dot(u,v)
+con_dot=dot(u,v)
     
 
 %%2. Cree ahora un vector columna, de nombre w, con componentes 2, 4, 6, y calcule 
@@ -96,7 +93,7 @@ V=[0:0.1:1]
 
 Ang= [0,pi,pi/2]
 MAng=[sin(Ang(:,1)),sin(Ang(:,2)),sin(Ang(:,3));
-      cos(Ang(:,1)),cos(Ang(:,2)),cos(Ang(:,3)),]
+      cos(Ang(:,1)),cos(Ang(:,2)),cos(Ang(:,3))]
 
 %%10. Cree una matriz compleja 3x3, de nombre H, con componentes 1+i, 1-i,
 % i (1ª fila), 1-i, i, 1+i (2ª fila) e i, 1+i, 1-i (3ª fila). Calcule su 
@@ -127,14 +124,3 @@ HT2=transpose(H)
 b=[0;1;2];
 x=A\b
 det_A=det(A)
-
-
-
-
-
-
-
-
-
-
-
