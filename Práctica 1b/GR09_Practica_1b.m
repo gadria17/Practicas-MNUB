@@ -1,6 +1,3 @@
-system('git init');
-repo=gitrepo;
-
 %%6. Usando la forma funcional del mandato load, cargue los datos del 
 % fichero datos.txt en una matriz de nombre matrizDatos. Haga que, al 
 % ejecutarse el script, se muestren por pantalla (en la ventana de mandatos)
@@ -41,7 +38,7 @@ desvestF1=std(vectorF1);
 % mensaje "El valor medio de vectorF1 es", seguido del valor de la variable
 % mediaF1. Introduzca un salto de línea.
 
-fprintf("El valor medio de vectorF1 es\n" + mediaF1);
+fprintf('El valor medio de vectorF1 es \n',mediaF1);
 
 %%11. Evalúe ahora la función definida en GRxx_R2R_Practica1b.m para los 
 % valores de x e y dados por datosX y datosY y llame vectorF2 al vector 
@@ -72,7 +69,6 @@ disp("FIN DE LA PRÁCTICA");
 % variables que antes hemos salvado con save.
 
 % Ejecutar load DatosGuardados.mat en la ventana de mandatos
-
 
 
 
