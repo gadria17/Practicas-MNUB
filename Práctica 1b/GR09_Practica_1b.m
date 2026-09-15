@@ -53,8 +53,25 @@ vectorF2=GR09_funcR2R_Practica1b(datosX,datosY);
 % para los valores de x e y dados por datosX y datosY y llame vectorF3 y 
 % vectorF4 a los vectores resultantes de esta evaluación.
 
-vectorF3=GR09_funcR2R2_Practica1b(datosX,datosY);
-vectorF4=GR09_funcR2R2_Practica1b(datosX,datosY);
+[vectorF3,vectorF4]= GR09_funcR2R2_Practica1b(datosX,datosY);
+
+
+%%13. Usando un mandato save, guarde todas las variables del workspace en 
+% un fichero de nombre DatosGuardados.mat (la terminación mat la añadirá el
+% propio Matlab).
+
+save('DatosGuardados');
+
+%%14. Usando un mandato disp, escriba por pantalla "FIN DE LA PRÁCTICA".
+
+disp("FIN DE LA PRÁCTICA");
+
+%%15. Ejecute el script y, una vez terminado correctamente, borre todas las
+% variables del workspace usando un mandato clear all. A continuación, vea 
+% que al ejecutar un mandato load DatosGuardados se regeneran todas las 
+% variables que antes hemos salvado con save.
+
+% Ejecutar load DatosGuardados.mat en la ventana de mandatos
 
 
 
