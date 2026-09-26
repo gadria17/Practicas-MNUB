@@ -57,19 +57,35 @@ figure;
 % como "seno(x)", "seno(2x)", "seno(3x)" y "seno(4x)".
 
 subplot(2,2,1);
-plot(x,sin(x)); axis([0 2*pi -1.5 1.5]); title('seno(x)')
+plot(x,sin(x)); 
+axis([0 2*pi -1.5 1.5]); 
+xlabel('x'); ylabel('y');
+title('seno(x)');
 subplot(2,2,2);
-plot(x,sin(2*x)); axis([0 2*pi -1.5 1.5]); title('seno(2x)')
+plot(x,sin(2*x)); 
+axis([0 2*pi -1.5 1.5]);
+xlabel('x'); ylabel('y');
+title('seno(2x)');
 subplot(2,2,3);
-plot(x,sin(3*x)); axis([0 2*pi -1.5 1.5]); title('seno(3x)')
+plot(x,sin(3*x)); 
+axis([0 2*pi -1.5 1.5]); 
+xlabel('x');ylabel('y');
+title('seno(3x)');
 subplot(2,2,4);
-plot(x,sin(4*x)); axis([0 2*pi -1.5 1.5]); title('seno(4x)')
+plot(x,sin(4*x)); 
+axis([0 2*pi -1.5 1.5]);
+xlabel('x'); ylabel('y');
+title('seno(4x)');
 
 figure;
 
+
+
 for k=1:4
     subplot(2,2,k);
-    plot(x,sin(k*x)); axis([0 2*pi -1.5 1.5])
+    plot(x,sin(k*x)); 
+    axis([0 2*pi -1.5 1.5]);
+    xlabel('x');ylabel('y');
 end
 
 %Usando un doble bucle for, cree una matriz z cuyos componentes sean el 
@@ -90,6 +106,7 @@ figure;
 % función definida en GRxx_func2var_Practica1c. Etiquete los ejes como x, 
 % y, z.
 surf(x,y,z);
+xlabel('x'); ylabel('y'); zlabel('z');
 
 %Usando un mandato meshgrid, cree una malla de valores de x e y (llame 
 %[X ,Y] a la matriz correspondiente).
@@ -102,3 +119,4 @@ Z=GR09_func2var_Practica1c(X,Y);
 figure;
 
 surf(X,Y, Z);
+xlabel('x'); ylabel('y'); zlabel('z');
