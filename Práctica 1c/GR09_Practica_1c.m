@@ -27,7 +27,7 @@ ylabel('y');
 plot(x,y,'b-');
 xlim([-3.5 3.5]);
 xline(0);
-yline(0); %% Se añaden el eje de las abscisas y el eje de coordenadas
+yline(0); %% Se añaden el eje de las abscisas y el eje de ordenadas
 
 %Emita un mandato hold on.
 hold on;
