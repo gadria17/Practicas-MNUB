@@ -38,7 +38,7 @@ desvestF1=std(vectorF1);
 % mensaje "El valor medio de vectorF1 es", seguido del valor de la variable
 % mediaF1. Introduzca un salto de línea.
 
-fprintf('El valor medio de vectorF1 es \n',mediaF1);
+fprintf('El valor medio de vectorF1 es \n %f',mediaF1);
 
 %%11. Evalúe ahora la función definida en GRxx_R2R_Practica1b.m para los 
 % valores de x e y dados por datosX y datosY y llame vectorF2 al vector 
