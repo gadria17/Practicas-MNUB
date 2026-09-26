@@ -79,7 +79,13 @@ title('seno(4x)');
 
 figure;
 
-
+%%Vamos ahora a repetir la figura múltiple anterior, pero automatizando el 
+%proceso usando un bucle for con índice k variando de 1 a 4, en el que se 
+% realicen las siguientes operaciones:
+% -Emita un mandato subplot que haga referencia a la k-ésima subgráfica.
+% -Emita un mandato plot que dibuje, en la k-ésima subgráfica, la gráfica 
+%  de la función sin(k*x). Añada a este plot los mismos mandato axis, 
+%  xlabel e ylabel del caso anterior, pero elimine ahora los títulos (title).
 
 for k=1:4
     subplot(2,2,k);
